@@ -5,7 +5,7 @@ import { env } from 'process';
 dotenv.config();
 
 export class ConfigEnvs {
-  static PORT = process.env.PORT;
+  static PORT = process.env.PORT || 3001;
   static NODE_ENV = process.env.NODE_ENV || 'development';
 }
 
